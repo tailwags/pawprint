@@ -9,4 +9,12 @@ codegen-units = 1
 strip = true
 
 [dependencies]
+anyhow = "1.0.95"
+clap = { version = "4.5.29", features = [
+    "derive",
+    "cargo",
+    "env",
+    "unicode",
+    "wrap_help",
+] }
 oxc = { version = "0.51.0", features = ["serialize"] }
