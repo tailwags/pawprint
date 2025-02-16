@@ -3,5 +3,10 @@ name = "engine-testing"
 version = "0.1.0"
 edition = "2021"
 
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+
 [dependencies]
 oxc = { version = "0.51.0", features = ["serialize"] }
