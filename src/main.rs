@@ -11,6 +11,8 @@ struct Args {
 }
 
 fn main() -> Result<()> {
+    tracing_subscriber::fmt::init();
+
     let Args { file } = Args::parse();
 
     let source = fs::read_to_string(&file)?;
