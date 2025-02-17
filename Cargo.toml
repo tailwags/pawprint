@@ -20,6 +20,7 @@ clap = { version = "4.5.29", features = [
     "unicode",
     "wrap_help",
 ] }
+cranelift = { version = "0.116.1", features = ["jit", "module"] }
 oxc = { version = "0.51.0", features = ["serialize"] }
 tracing = "0.1.41"
 tracing-subscriber = { version = "0.3.19", features = [
