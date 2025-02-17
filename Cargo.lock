@@ -208,7 +208,6 @@ checksum = "a71de5e59f616d79d14d2c71aa2799ce898241d7f10f7e64a4997014b4000a28"
 dependencies = [
  "cranelift-codegen",
  "cranelift-frontend",
- "cranelift-jit",
  "cranelift-module",
 ]
 
@@ -357,6 +356,9 @@ dependencies = [
  "anyhow",
  "clap",
  "cranelift",
+ "cranelift-jit",
+ "cranelift-module",
+ "cranelift-native",
  "oxc",
  "tracing",
  "tracing-subscriber",
