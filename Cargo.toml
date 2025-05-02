@@ -12,19 +12,19 @@ codegen-units = 1
 strip = true
 
 [dependencies]
-anyhow = "1.0.95"
-clap = { version = "4.5.29", features = [
+anyhow = "1.0.98"
+clap = { version = "4.5.37", features = [
     "derive",
     "cargo",
     "env",
     "unicode",
     "wrap_help",
 ] }
-cranelift = "0.116.1"
-cranelift-jit = "0.116.1"
-cranelift-module = "0.116.1"
-cranelift-native = "0.116.1"
-oxc = { version = "0.51.0", features = ["serialize"] }
+cranelift = "0.119.0"
+cranelift-jit = "0.119.0"
+cranelift-module = "0.119.0"
+cranelift-native = "0.119.0"
+oxc = { version = "0.67.0", features = ["serialize"] }
 tracing = "0.1.41"
 tracing-subscriber = { version = "0.3.19", features = [
     "env-filter",
