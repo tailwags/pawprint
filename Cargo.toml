@@ -11,6 +11,10 @@ lto = true
 codegen-units = 1
 strip = true
 
+[profile.bloat]
+inherits = "release"
+strip = false
+
 [dependencies]
 anyhow = "1.0.98"
 clap = { version = "4.5.43", features = [
