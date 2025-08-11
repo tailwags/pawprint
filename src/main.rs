@@ -18,9 +18,20 @@ fn main() -> Result<()> {
     let source = fs::read_to_string(&file)?;
     let source_type = SourceType::from_path(&file)?;
     let allocator = Allocator::default();
-    let ast = Parser::new(&allocator, &source, source_type).parse();
+    let ret = Parser::new(&allocator, &source, source_type).parse();
 
-    dbg!(ast.program);
+    dbg!(ret.program);
+
+    // Report parsing results
+    if ret.errors.is_empty() {
+        println!("Parsed Successfully.");
+    } else {
+        for error in ret.errors {
+            let error = error.with_source_code(source.clone());
+            println!("{error:?}");
+        }
+        println!("Parsed with Errors.");
+    }
 
     Ok(())
 }
