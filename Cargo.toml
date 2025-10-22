@@ -16,24 +16,24 @@ inherits = "release"
 strip = false
 
 [dependencies]
-clap = { version = "4.5.43", features = [
+clap = { version = "4.5.50", features = [
     "derive",
     "cargo",
     "env",
     "unicode",
     "wrap_help",
 ] }
-cranelift = "0.122.0"
-cranelift-jit = "0.122.0"
-cranelift-module = "0.122.0"
-cranelift-native = "0.122.0"
+cranelift = "0.125.2"
+cranelift-jit = "0.125.2"
+cranelift-module = "0.125.2"
+cranelift-native = "0.125.2"
 miette = { version = "7.6.0", features = ["fancy"] }
-oxc_allocator = "0.81.0"
-oxc_ast = "0.81.0"
-oxc_parser = "0.81.0"
-oxc_span = "0.81.0"
+oxc_allocator = "0.95.0"
+oxc_ast = "0.95.0"
+oxc_parser = "0.95.0"
+oxc_span = "0.95.0"
 tracing = "0.1.41"
-tracing-subscriber = { version = "0.3.19", features = [
+tracing-subscriber = { version = "0.3.20", features = [
     "env-filter",
     "tracing-log",
 ] }
